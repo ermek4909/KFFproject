@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="KFF project" verbose="2">
+
+	<test name="Automated smoke test">
+		<classes>
+			<class name =".*"></class>
+		</classes>
+	</test>
+
+</suite>
