@@ -23,35 +23,24 @@ public class WaveAuto {
 	@FindBy(xpath = "//div[@class='inner']//h2")
 	public WebElement doubleCheck;
 	
-//	@FindBy(xpath = "(//div[@id='map-container'])")
-//	public List<WebElement> mapVis;
+	@FindBy(xpath = "//*[name()='svg']/*[name()='g' and @class='datamaps-subunits']")
+	public WebElement mapVis;
 	
-	@FindBy(xpath = "(//button[@type='submit'])[1]")
+	
+	@FindBy(xpath = "//*[name()='svg']/*[name()='g']/*[name()='path'  and @class='datamaps-subunit TX']")
 	public WebElement Texas;
+	@FindBy(xpath = "(//div[@class='datamaps-hover']//span)[3]")
+	public WebElement textTX;
 	
-//	@FindBy(xpath = "(//button[@type='submit'])[1]")
-//	public WebElement signin;
-//	
-//	@FindBy(xpath = "(//button[@type='submit'])[1]")
-//	public WebElement signin;
-//	
-//	@FindBy(xpath = "(//button[@type='submit'])[1]")
-//	public WebElement signin;
-//	
-//	@FindBy(xpath = "(//button[@type='submit'])[1]")
-//	public WebElement signin;
-//	
-//	@FindBy(xpath = "(//button[@type='submit'])[1]")
-//	public WebElement signin;
-//	
-//	@FindBy(xpath = "(//button[@type='submit'])[1]")
-//	public WebElement signin;
+	@FindBy(xpath = "//*[name()='svg']/*[name()='g']/*[name()='path' and @class='datamaps-subunit MN']")
+	public WebElement Minnesota;
+	@FindBy(xpath = "")
+	public WebElement textMN;
 	
-	
-	
-	
-	
-	
+	@FindBy(xpath = "//*[name()='svg']/*[name()='g']/*[name()='path' and @class='datamaps-subunit CO']")
+	public WebElement Colorado;
+	@FindBy(xpath = "")
+	public WebElement textCO;
 	
 	
 
