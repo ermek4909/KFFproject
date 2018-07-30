@@ -11,7 +11,7 @@ public class Config {
 	static {
 
 		try {
-			String path = "/Users/ermekru/eclipse-workspace/kffProject/prop.properties";
+			String path = "/Users/nuhhacibektasoglu/git/KFFproject/prop.properties";
 			FileInputStream input = new FileInputStream(path);
 
 			configFile = new Properties();
