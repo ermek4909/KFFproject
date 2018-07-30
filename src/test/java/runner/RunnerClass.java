@@ -2,6 +2,7 @@ package runner;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -14,6 +15,7 @@ import org.testng.annotations.Test;
 
 import com.google.common.base.Functions;
 
+import page.HealthInsuranceMarketplaceCalculatorPage;
 import page.WaveAuto;
 import utilities.Config;
 import utilities.Driver;
@@ -22,6 +24,7 @@ public class RunnerClass {
 	
 	
 	WaveAuto pom = new WaveAuto();
+	HealthInsuranceMarketplaceCalculatorPage hicp = new HealthInsuranceMarketplaceCalculatorPage();
 	
 	@Test (priority = 0)
 	
@@ -76,21 +79,42 @@ public class RunnerClass {
 		String co = "Colorado";
 		// we can not verify that "Texas" text is displayed 
 		// because, Sign "Texas" is hidden 
-		Assert.assertNotEquals(pom.Colorado.getText(), co);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
+		Assert.assertNotEquals(pom.Colorado.getText(), co);	
 	}
+		
+	
+	
+	
+	
+	///////////////////////////////////////////////////////
+		
+		@Test (priority = 1)
+		public void SmokeTest3() throws InterruptedException {
+			Driver.getDriver().get(Config.getValue("urlCalculatorPage"));
+			
+			Thread.sleep(3000);
+			Random rd = new Random();
+			int rnd = rd.nextInt(90000) + 10000;
+			String rndN = Integer.toString(rnd);
+			hicp.incomeBox.sendKeys(rndN);
+			Thread.sleep(3000);
+			hicp.submitBtn.click();
+			
+			String expectedResult = "RESULTS";
+			String actualResult = hicp.resultText.getText();
+			Assert.assertEquals(expectedResult, actualResult);
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
 	
 
 	
