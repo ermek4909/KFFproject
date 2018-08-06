@@ -35,7 +35,7 @@ public class RunnerClass extends TestBase{
 	
 	public void Test_Case1() throws InterruptedException {
 	
-		extentLogger = report.createTest("Home page Title, logo, main menu verification");
+		extentLogger = report.createTest(" main menu verification ");
 		TestCases1 pom = new TestCases1();
 	
 		
@@ -138,7 +138,7 @@ public class RunnerClass extends TestBase{
 		@Test (priority = 2)
 		public void Test_Cases2() throws InterruptedException {
 			
-			extentLogger = report.createTest("Home page Title, logo, main menu verification");
+			extentLogger = report.createTest(" verification ");
 			TestCases2 tc = new TestCases2();
 			
 			
