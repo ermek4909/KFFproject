@@ -2,9 +2,9 @@
 <suite name="KFF project" verbose="2">
 
 	<test name="Automated smoke test">
-		<classes>
-			<class name =".*"></class>
-		</classes>
+		<packages>
+			<package name =".*">  </package>
+		</packages>
 	</test>
 
 </suite>

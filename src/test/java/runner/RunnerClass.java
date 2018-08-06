@@ -15,6 +15,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.google.common.base.Functions;
+
+import base.TestBase;
 import page.HealthInsuranceMarketplaceCalculatorPage;
 import page.TestCases1;
 import utilities.Config;
@@ -24,7 +26,7 @@ import page.TestCases2;
 import page.TestCases20;
 
 
-public class RunnerClass {
+public class RunnerClass extends TestBase{
 	
 	
 	HealthInsuranceMarketplaceCalculatorPage hicp = new HealthInsuranceMarketplaceCalculatorPage();

@@ -7,7 +7,12 @@
         <methods>
           <include name="Test_Cases20"/>
           <include name="Test_Cases2"/>
+          <include name="setUpTest"/>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
           <include name="Test_Case1"/>
+          <include name="tearDown"/>
+          <include name="SmokeTest3"/>
         </methods>
       </class> <!-- runner.RunnerClass -->
     </classes>
