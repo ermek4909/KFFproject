@@ -11,7 +11,7 @@ public class Config {
 	static {
 
 		try {
-			String path = "/Users/nuhhacibektasoglu/git/KFFproject/prop.properties";
+			String path = "/Users/ermekru/git/KFFproject/prop.properties";
 			FileInputStream input = new FileInputStream(path);
 
 			configFile = new Properties();
@@ -24,6 +24,7 @@ public class Config {
 
 		}
 	}
+	
 
 	public static String getValue(String keyName) {
 		return configFile.getProperty(keyName);

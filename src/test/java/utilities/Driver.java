@@ -27,21 +27,21 @@ public class Driver {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 			driver.manage().window().fullscreen();
 			break;
 			
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-			driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 			driver.manage().window().fullscreen();
 			break;
 			
 			default:
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
-				driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 				driver.manage().window().fullscreen();
 				
 		}

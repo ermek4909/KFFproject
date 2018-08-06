@@ -12,6 +12,7 @@ public class HealthInsuranceMarketplaceCalculatorPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
+	
 	@FindBy(xpath = "//input[@name='income']")
 	public WebElement incomeBox;
 	
@@ -20,4 +21,4 @@ public class HealthInsuranceMarketplaceCalculatorPage {
 	
 	@FindBy(xpath = "//div[@class='box full-post beige subsidy-results-wrapper']//h2")
 	public WebElement resultText;
-}
+ }

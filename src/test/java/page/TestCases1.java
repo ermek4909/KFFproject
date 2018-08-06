@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.Driver;
 
-public class WaveAuto {
+public class TestCases1 {
 	
 	
-	public WaveAuto() {
+	public TestCases1() {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
@@ -41,6 +41,8 @@ public class WaveAuto {
 	public WebElement Colorado;
 	@FindBy(xpath = "")
 	public WebElement textCO;
+	
+	
 	
 	
 
