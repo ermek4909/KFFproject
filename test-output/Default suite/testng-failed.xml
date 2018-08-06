@@ -5,7 +5,9 @@
     <classes>
       <class name="runner.RunnerClass">
         <methods>
-          <include name="TestCase1"/>
+          <include name="Test_Cases20"/>
+          <include name="Test_Cases2"/>
+          <include name="Test_Case1"/>
         </methods>
       </class> <!-- runner.RunnerClass -->
     </classes>
