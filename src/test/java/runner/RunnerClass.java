@@ -29,16 +29,16 @@ import page.TestCases20;
 public class RunnerClass extends TestBase{
 	
 	
-	HealthInsuranceMarketplaceCalculatorPage hicp = new HealthInsuranceMarketplaceCalculatorPage();
-	TestCases1 pom = new TestCases1();
-	TestCases2 tc = new TestCases2();
-	TestCases20 tc1 = new TestCases20();
 	
 	
 	@Test (priority = 0)
 	
 	public void Test_Case1() throws InterruptedException {
 	
+		extentLogger = report.createTest("Home page Title, logo, main menu verification");
+		TestCases1 pom = new TestCases1();
+	
+		
 		// launch browser and go to State Health Facts page  
 		Driver.getDriver().get(Config.getValue("url1"));
 	
@@ -88,10 +88,25 @@ public class RunnerClass extends TestBase{
 	
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	///////////////////////////////////////////////////////
 		
 		@Test (priority = 1)
 		public void SmokeTest3() throws InterruptedException {
+			
+			extentLogger = report.createTest("Home page Title, logo, main menu verification");
+
+			HealthInsuranceMarketplaceCalculatorPage hicp = new HealthInsuranceMarketplaceCalculatorPage();
+			
 			Driver.getDriver().get(Config.getValue("urlCalculatorPage"));
 			
 			Thread.sleep(3000);
@@ -107,15 +122,25 @@ public class RunnerClass extends TestBase{
 			Assert.assertEquals(expectedResult, actualResult);
 			
 		}
-		
-	    ///////////////////////////////////////////////////////
-		
+
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		///////////////////////////////////////////////////////
 		
 		
 		@Test (priority = 2)
 		public void Test_Cases2() throws InterruptedException {
+			
+			extentLogger = report.createTest("Home page Title, logo, main menu verification");
+			TestCases2 tc = new TestCases2();
+			
 			
 //			Thread.sleep(2000);
 			WebElement menu = Driver.getDriver().findElement(By.xpath("(//div[@class='inner']//a[1])"));
@@ -196,17 +221,23 @@ public class RunnerClass extends TestBase{
 			
 		}
 		
+
+		
+		
+		
+		
+		
+		
 		
 		
 		
 		///////////////////////////////////////////////////////
 		
-		
-		
-		
-		
 		@Test (priority = 3)
 		public void Test_Cases20() {
+			extentLogger = report.createTest("Home page Title, logo, main menu verification");
+			TestCases20 tc1 = new TestCases20();
+		
 			
 			// Step - 1, Launch browser and go to Health Insurance Marketplace Calculator 
 			tc1.home.click();
@@ -276,21 +307,7 @@ public class RunnerClass extends TestBase{
 			System.out.println(tc1.ver6.isDisplayed());
 			Assert.assertTrue(tc1.ver6.isDisplayed());
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+	
 		}
 		
 		
